@@ -1,0 +1,104 @@
+# Fehlerhilfe und bekannte Grenzen
+
+[Übersicht](../README.md) · [Bedienung](USER_GUIDE.md)
+
+Stand: 0.9.97, 07.10.2026. Bei Problemen zuerst installierte Version, betroffenen Bereich und genaue Statusmeldung festhalten. Screenshots vor dem Teilen auf Zugangsdaten und persönliche Daten prüfen.
+
+## Markt aktiv, aber kein Verkaufspreis
+
+„Aktiv“ allein reicht nicht. Prüfen:
+
+1. Hat das Produkt einen gültigen, gespeicherten EK mit bekannter Währung?
+2. Ist diese Währung tatsächlich die Shopwährung beziehungsweise korrekt normalisiert?
+3. Hat die Regel eine echte Länderzuordnung und passt ihr Geltungsbereich?
+4. Gibt es eine eindeutig passende aktive Regel, ohne Konflikte?
+5. Sind benötigte Wechselkurse gültig und aktuell?
+6. Welche Begründung steht in der Statusspalte und im Rechenweg?
+
+Bei Altprodukten ohne EK-Währung die vorhandenen Quelldaten öffnen, korrekte Quellwährung wählen und erneut importieren. Keine Währung anhand eines Zahlenformats oder eines Landesnamens raten.
+
+Seit 0.9.58 zusätzlich **Preisregel bearbeiten → EK-Steuer** prüfen. „EK-Steuerbasis ungeklärt“ bedeutet, dass netto/brutto beziehungsweise wirtschaftliche Kosten und gegebenenfalls Einkaufssteuer/Vorsteuerabzug noch nicht bestätigt sind. Ein aktiver Markt allein reicht dafür nicht. Beleg bzw. tatsächliche Feldbeschreibung verwenden; keine persönliche Steuerannahme pauschal auf alle Quellen übertragen.
+
+Bei Shop-, EK- und Angebotswährung EUR ist keine EUR-zu-EUR-Umrechnung nötig. Bleibt trotzdem ein Kurshinweis, die vollständige Meldung und die tatsächlich gespeicherten Währungsfelder prüfen; nicht einfach einen Kurs erfinden.
+
+Die Tabelle gespeicherter Marktpreise kann leer bleiben, obwohl „Aktueller VK“ einen berechneten Wert zeigt. Die Vorschau ist kein gespeicherter oder veröffentlichter Preis.
+
+## 0 Länder auf der Marktkarte
+
+Die Zahl soll auch Länder pausierter Regeln zählen. Der Text „Deutschland“ oder ein anderer Ländername im frei vergebenen Regelnamen ersetzt keine Länderzuordnung.
+
+Preisregel öffnen und die gespeicherten Länder/Ländergruppen prüfen. Sind sie vorhanden und bleibt die Zahl nach Aktualisierung falsch, Version und Regelkonfiguration als Fehlernachweis festhalten. Nicht für jedes Land einen zweiten Verkaufskanal anlegen, um die Anzeige zu umgehen.
+
+## Wechselkurs fehlt oder ist veraltet
+
+Fehlende, zukünftige, unplausible oder mehr als vier Kalendertage alte EZB-Grundlagen sowie unvereinbare Kursdaten können die Umrechnung sperren. Nicht jede Währung wird unterstützt. Netzwerkverfügbarkeit und unterstützte Währungen prüfen; ein alter Kurs darf nicht durch bloßes Umdatieren „aktuell“ gemacht werden.
+
+Gleiche Quell- und Zielwährung braucht keinen Umrechnungskurs. Originalpreise und bestehende Produkte müssen bei einer blockierten Umrechnung erhalten bleiben.
+
+## Wiederhergestellte Importauswahl fehlt oder wirkt falsch
+
+Die Wiederherstellung benötigt eine eindeutige Verbindung zum früher importierten Produkt und Lieferanten. Andere Kennungen, andere Lieferantenzuordnung, doppelte Schlüssel oder fehlende Quellzeilen können sie verhindern.
+
+Zeilenreihenfolge ist nicht die Identität. Nicht wahllos alle Zeilen markieren und nicht Produkte löschen, um eine Zuordnung zu erzwingen. Betroffene Schlüssel und die Importprüfung kontrollieren. Neue Produkte bleiben durch die automatische Wiederherstellung unmarkiert, sofern sie nicht bereits bewusst ausgewählt wurden.
+
+Beim Neuimport bleiben zugeordnete vorhandene Produktanhänge erhalten. Explizite Löschaktionen, beschädigte Dateien und nicht mehr erreichbare externe Links sind davon nicht gedeckt.
+
+## Speichern meldet zwischenzeitlich geänderte Daten
+
+Die Meldung schützt vor dem Überschreiben eines neueren Standes. Entwurf soweit möglich sichern, Bearbeitung schließen, aktuellen Stand erneut öffnen und Änderungen prüfen. Nicht durch Manipulation von Versions-/Hashfeldern umgehen. Tritt der Konflikt ohne erkennbare parallele Bearbeitung wiederholt auf, ist das ein untersuchungsbedürftiger Fehler.
+
+## KI antwortet nicht, fragt nach oder liefert nur einen Entwurf
+
+Während einer Anfrage Status und Abbruchmöglichkeit prüfen. Ein Abbruch beendet nicht rückwirkend bereits beim Anbieter entstandene Kosten. Verbindungsfehler oder unvollständige Ergebnisse dürfen nicht als fertige Regel übernommen werden.
+
+Rückfragen stehen im eigenen Reiter. Öffentlich recherchierbare Fakten sollen recherchiert werden; persönliche Kontoeinstellungen oder fachliche Entscheidungen kann die KI nicht zuverlässig erraten. Fehlende Recherchebestätigung ist keine bestätigte Webrecherche.
+
+Ein fortgeschriebener Arbeitsauftrag speichert noch keine Markt-/Versandregel. Entwurf prüfen und übernehmen; anschließend Aktivierungszustand kontrollieren. Eine fremde Sektion darf dabei nicht geändert werden.
+
+## Update nicht verfügbar oder Prüfung scheitert
+
+- Index nicht vorhanden/HTTP 404: Kanal nicht veröffentlicht; kein Nachweis „aktuell“.
+- Netzwerkfehler: Status nicht prüfbar.
+- Signatur-/Hash-/Inventarfehler: Update ablehnen, nicht Sicherheitsprüfungen deaktivieren.
+- Inkompatibler Launcher oder fehlende .NET-Desktop-Runtime: kompatible Installation/Umgebung erforderlich.
+- GitHub-Release sichtbar, aber noch nicht angeboten: Nur der gültige signierte Kanalindex aktiviert eine Version.
+
+Keine Pakete, Vertrauensdateien oder Installationsreceipts manuell ersetzen. Die Wiederherstellung eines fehlgeschlagenen Starts und ein fernpublizierter Versionsrücksprung sind unterschiedliche Vorgänge. Archivierte Versionen sind kein freigegebener Downgradeweg.
+
+## Arbeitsspeicher und Ladehänger
+
+0.9.92 begrenzt das Laden und Speichern von Markt- und Versandkonfigurationen auf die benötigten Grundlagen. 0.9.93 ergänzt gezieltes Lesen, Hintergrundfilterung, bedarfsweises Laden einzelner E-Mail-Entwürfe und Speicherfreigabe nach Aufgaben. Diese Änderungen sind keine Garantie, dass jede Nutzerdatenmenge oder beschädigte Datei verarbeitet werden kann.
+
+Bei wiederholter Meldung „Nicht genügend Arbeitsspeicher“ zuerst auf den angebotenen aktuellen Stand aktualisieren. Bereich, Aktion, Datenumfang und genaue Meldung festhalten. Benutzerdaten nicht löschen und Grenzprüfungen nicht pauschal abschalten. Die physische RAM-Größe allein erklärt nicht die tatsächlich ausgelöste Grenze.
+
+## Kontakte werden nicht übernommen
+
+Der Auftrag „Füll meine Kontakte aus meinen E-Mails“ kann seit 0.9.90 den abschnittsweisen Kontaktimport starten. Postfach und Lesefreigabe prüfen. Der Assistent muss Fehler mit konkreten Prüfangaben korrigieren können; gültige Kontaktbeobachtungen sollen nicht durch einen unabhängigen Entwurfsfehler verloren gehen. Gespeicherte Kontakte stehen in der Tabelle Kontakte unter Spam.
+
+Fortsetzen nutzt den verschlüsselten lokalen Arbeitsstand. Ein erfolgreich beendeter Abschnitt bedeutet nicht zwingend, dass das gesamte Postfach vollständig ausgewertet wurde. Absender-Signaturen dürfen nicht fremden Empfängern zugeschrieben werden. Konflikte und fehlende belegte Angaben prüfen, statt Daten zu erfinden.
+
+## eBay-Anmeldung scheitert
+
+`unauthorized_client` mit „OAuth-Client wurde nicht gefunden“: zuerst die richtige Umgebung und deren App ID, Cert ID und Redirect URL Name prüfen. Sandbox-Daten sind keine Production-Daten. Keine Secrets in Screenshots oder Supportnachrichten senden.
+
+„Keyset disabled“ beziehungsweise „Non Compliant“ im eBay-Portal ist eine getrennte Freigabeanforderung. Ein bloß angelegter Cloudflare-Worker oder ein Challenge-Response reicht nicht als Nachweis vollständiger Löschbenachrichtigungsverarbeitung. Keine Ausnahme behaupten, wenn sie fachlich nicht zutrifft.
+
+Die bestätigten Ziele `auth2.ebay.com` und `auth2.ebay.de` sind seit 0.9.94/0.9.95 im Echtbetrieb erlaubt. Andere Weiterleitungsziele nicht pauschal freischalten. `temporarily_unavailable` meldet eine aktuell nicht verarbeitete Autorisierung; erneut starten und bei Wiederholung Umgebung und Portalstatus prüfen. Kein Nachweis erfolgreicher Anmeldung oder Veröffentlichung.
+
+## Repositoryname und Updatezugang
+
+0.9.96 enthält die begrenzten Übergangspfade zum Namen Beydosh-PIM-Updates. 0.9.97 ergänzt die nötige Wartungsanforderung, da eine aktuelle App neben einem älteren Launcher installiert sein kann. Regulär auf 0.9.97 aktualisieren und den Wartungsschritt durchlaufen lassen. Das Repository wurde am 07.10.2026 nach bestätigter Installation und erfolgreicher Abrufprüfung umbenannt. Die geprüfte 0.9.97-Installation erreicht beide Adressen. Ältere Updater können Metadatenweiterleitungen ablehnen. Weder Signaturprüfung abschalten noch historische signierte URLs umschreiben.
+
+## Aussagegrenzen
+
+### Brutto, Steuer und Rechenreihe
+
+Die neue Kalkulationsreihe ist eine Erklärung der ausgewählten Regel, kein zusätzlicher Preisaufschlag. Steuer nicht ein zweites Mal in Formel oder Zusatzkosten eintragen. Bei einer unerwarteten Abweichung zuerst EK-Steuerbasis, TaxPercent, Gebührenbasis und Rundung prüfen. Lange Reihen seitlich scrollen; für Zahlenwerte den Rechenweg eines Beispielprodukts öffnen.
+
+### Alte ID wird beim Wiederimport nicht übernommen
+
+Bei „ID-Reservierung fehlgeschlagen“ unter 0.9.55 zuerst auf 0.9.56 aktualisieren und die Daten erneut öffnen. Der behobene Fehler konnte bei einem uneindeutigen gelöschten Produkt die komplette Auswahl blockieren. In 0.9.56 steht der konkrete Konflikt an der gesperrten Zeile; andere eindeutige Zeilen bleiben reservierbar. Produktkennungen nicht wahllos ändern und keine weiteren Produkte als Umgehung löschen.
+
+Lieferantenbezug und zugeordnete Kennungen prüfen. EAN/GTIN allein benötigt eine gültige Prüfziffer. Widersprüchliche Kennungen, mehrere Treffer oder eine noch aktive andere Identität sperren die automatische Wiederherstellung. Fehlt eine für alte Löschungen benötigte Sicherung, den Nachweis wiederherstellen statt eine ID manuell zu erzwingen.
+
+Automatisierte Tests und isoliertes signiertes Staging sind keine vollständige manuelle Prüfung der Benutzerinstallation. Die Nachweise umfassen keine reale Neuimport-Prüfung sämtlicher Nutzerdaten oder Bestätigung individueller Marktgebühren. Bekannte Sicherheits-/Fachgrenzen dürfen nicht durch pauschale Aussagen wie „alle Produkte funktionieren garantiert“ ersetzt werden.
