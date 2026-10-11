@@ -1,19 +1,17 @@
-# Beydosh PIM Setup
+# Beydosh PIM Installer
 
-Aktueller lokaler Testkandidat: Setup 0.9.0, Wartungsrevision 10.
+Version **0.9.0-r10** · Vorabversion für Tests, nicht für den produktiven Einsatz.
 
-[Setup-ZIP in diesem Ordner](./Beydosh-PIM-Setup-0.9.0-r10.zip) · [Versionierter Download](https://github.com/Beydosh/releases/releases/download/v0.9.105/Beydosh-PIM-Setup-0.9.0-r10.zip)
+[Installer herunterladen (ZIP)](https://github.com/Beydosh/releases/releases/download/v0.9.105/Beydosh-PIM-Setup-0.9.0-r10.zip)
 
-## Installation / Reparatur
+## Voraussetzungen
 
-1. ZIP herunterladen und vollständig in einen eigenen Ordner entpacken.
-2. `Beydosh.Setup.Bootstrapper.exe` starten. Alle Dateien müssen zusammenbleiben.
-3. Vorhandene Installation über den Setupdialog reparieren; anschließend PIM und Updatekanal prüfen.
+Windows 64-Bit mit installierter .NET Windows Desktop Runtime 9 (x64).
 
-Lokaler Owner-Testkandidat, keine Kunden- oder kommerzielle Freigabe. Installation und Reparatur dieses Ersatzpakets sind noch nicht am installierten PIM bestätigt. Die passende .NET-Windows-Desktop-Laufzeit muss vorhanden sein.
+## Installation und Reparatur
 
-SHA256: `B47BA2D26048021BB44C195DC47C9712AEB06E2104C546BFC61A48CE7E5E1C0F`
+1. ZIP vollständig in einen eigenen Ordner entpacken.
+2. `Beydosh.Setup.Bootstrapper.exe` starten und den Anweisungen folgen. Die entpackten Dateien nicht trennen oder umbenennen.
+3. Für eine vorhandene Installation im Installer die Reparatur auswählen.
 
-Defender meldete beim ZIP, seinen Dateien, einem frisch entpackten Exemplar und erneutem Release-Download keine Bedrohung (Definition 1.459.670.0). Dies bestätigt weder einen Fehlalarm des zurückgezogenen Einzel-EXE-Pakets noch garantierte Schadsoftwarefreiheit. Schutzmaßnahmen nicht abschalten.
-
-Der Updatekanal bleibt unter `beta/updates/stable/`. Historische Downloads bleiben bei GitHub Releases. Veröffentlichungen ausschließlich über das Beydosh-Konto.
+Vor Änderungen wichtige Daten sichern. Bei einer Sicherheitswarnung abbrechen und den Schutz nicht deaktivieren.
