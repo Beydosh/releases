@@ -4,7 +4,11 @@ Public destination for approved Beydosh installers, release notes and signed upd
 
 ## Current status
 
-This repository is prepared only. No downloads or update manifests have been published here. Creating this repository does not migrate or activate the existing update channel. Existing installed applications and installers must continue using their configured channel until a separately approved and tested migration is completed.
+The complete historical update channel is being migrated here from `CrystalxSLY/Beydosh-PIM-Updates`. Its original Git history and release tags are preserved. All 130 historical channel files are imported byte-for-byte under `beta/`; the initial preparation document is preserved as `beta/PREPARATION-README.md`.
+
+The source inventory contains 101 releases and 112 assets (1,709,851,344 bytes). Asset transfer is ongoing, with SHA-256 comparison for each uploaded file. The existing channel remains active until the transition update has been downloaded and tested. A copied historical Latest is an archive of the existing channel, not proof that old installed launchers already understand this repository.
+
+The canonical metadata location for the transition updater is `beta/updates/stable/`. Releases remain beta/owner-development previews even though the inherited protocol uses the directory name `stable`. Historical signed manifests and package bytes are not rewritten.
 
 ## Release requirements
 
