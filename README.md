@@ -1,24 +1,23 @@
 # Beydosh Releases
 
-Public destination for approved Beydosh installers, release notes and signed update artifacts.
+Öffentliche signierte Updatepakete und Versionshinweise für Beydosh PIM.
 
-## Current status
+## Beta-Updates
 
-The complete historical update channel is being migrated here from `CrystalxSLY/Beydosh-PIM-Updates`. Its original Git history and release tags are preserved. All 130 historical channel files are imported byte-for-byte under `beta/`; the initial preparation document is preserved as `beta/PREPARATION-README.md`.
+Aktueller Stand: **0.9.110** für Windows x64.
 
-The source inventory contains 101 releases and 112 assets (1,709,851,344 bytes). Asset transfer is ongoing, with SHA-256 comparison for each uploaded file. The existing channel remains active until the transition update has been downloaded and tested. A copied historical Latest is an archive of the existing channel, not proof that old installed launchers already understand this repository.
+- [Aktuelle Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.110)
+- [Updatekanal und Voraussetzungen](beta/updates/stable/)
+- [Alle veröffentlichten Versionen](https://github.com/Beydosh/releases/releases)
 
-The canonical metadata location for the transition updater is `beta/updates/stable/`. Releases remain beta/owner-development previews even though the inherited protocol uses the directory name `stable`. Historical signed manifests and package bytes are not rewritten.
+Die fehlenden Versionen 0.9.107, 0.9.108 und 0.9.109 wurden unverändert nachgepflegt. 0.9.110 enthält deren Änderungen. Die Anwendung prüft Signatur und Integrität vor einer Aktualisierung. Updatepakete sind keine ausführbaren Installer.
 
-## Release requirements
+Ab 0.9.108 wird ein kontofähiger Launcher ab 0.9.108 benötigt. Die Anmeldung mit einem Beydosh-Konto synchronisiert keine lokalen Geschäftsdaten. Die veröffentlichten Versionen sind Beta-Vorversionen; Hinweise und Testgrenzen stehen bei der jeweiligen Version.
 
-Each published release must state its version, supported platform, changes, known limitations and compatible documentation/resources. Publish only verified and explicitly approved artifacts. Keep signature and integrity checks intact. Private signing keys, credentials, private application source and customer data must remain outside this repository and its release assets.
+## Setup
 
-The actual update manifest format and channel paths must match the verified App, Launcher and Installer implementation; this README does not define a replacement protocol. Do not invent manifests or bypass trust checks.
+[Setup-Informationen](Setup/). Neue Setup-Pakete werden derzeit nur lokal geprüft und nicht veröffentlicht.
 
-## Links
+Historische signierte Pakete werden nicht umgeschrieben. Private Anwendungssourcen, Signierschlüssel und Zugangsdaten gehören nicht in dieses Repository. Veröffentlichungen erfolgen über den Beydosh-Veröffentlichungsaccount.
 
-- Published downloads, when available: https://github.com/Beydosh/releases/releases
-- Documentation: https://github.com/Beydosh/docs
-- Resources: https://github.com/Beydosh/resources
-- Website: https://beydosh.com/
+[Website](https://beydosh.com/) · [Dokumentation](https://github.com/Beydosh/docs) · [Ressourcen](https://github.com/Beydosh/resources)
