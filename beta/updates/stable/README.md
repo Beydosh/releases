@@ -1,12 +1,12 @@
 # Beydosh PIM Beta-Updatekanal
 
-Aktueller veröffentlichter Stand: **0.9.110** für Windows x64.
+Aktueller veröffentlichter Stand: **0.9.111** für Windows x64.
 
-- [Änderungen und Updatepaket](https://github.com/Beydosh/releases/releases/tag/v0.9.110)
+- [Änderungen und Updatepaket](https://github.com/Beydosh/releases/releases/tag/v0.9.111)
 - [Signierter Kanalindex](latest.beydosh.json)
-- [Signiertes Manifest](0.9.110/manifest.beydosh.json)
+- [Signiertes Manifest](0.9.111/manifest.beydosh.json)
 
-Die Versionen 0.9.107, 0.9.108 und 0.9.109 wurden mit ihren unveränderten signierten Paketen nachgepflegt. 0.9.110 enthält deren Änderungen. Die Aktualisierung erfolgt über Beydosh PIM; die Paketdateien sind keine ausführbaren Installer.
+Die Versionen 0.9.107, 0.9.108 und 0.9.109 wurden mit ihren unveränderten signierten Paketen nachgepflegt. 0.9.111 enthält deren Änderungen sowie den Kontoreiter aus 0.9.110, deutlich langsameres Benachrichtigungs-Scrollen und den Dashboard-Aufruf über das eigene Kopfzeilenlogo. Die Aktualisierung erfolgt über Beydosh PIM; die Paketdateien sind keine ausführbaren Installer.
 
 Ab 0.9.108 ist ein kontofähiger Launcher ab Version 0.9.108 erforderlich. Die Anmeldung ist verpflichtend. Es wird eine geschützte Sitzung gespeichert, kein Passwort. Lokale Geschäftsdaten werden durch die Kontoanmeldung nicht automatisch synchronisiert.
 
