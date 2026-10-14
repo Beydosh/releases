@@ -4,15 +4,15 @@
 
 ## Beta-Updates
 
-Aktueller Stand: **0.9.111** für Windows x64.
+Aktueller Stand: **0.9.112** für Windows x64.
 
-- [Aktuelle Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.111)
+- [Aktuelle Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.112)
 - [Updatekanal und Voraussetzungen](beta/updates/stable/)
 - [Alle veröffentlichten Versionen](https://github.com/Beydosh/releases/releases)
 
-Die fehlenden Versionen 0.9.107, 0.9.108 und 0.9.109 wurden unverändert nachgepflegt. 0.9.111 enthält deren Änderungen sowie den Kontoreiter aus 0.9.110, langsameres Benachrichtigungs-Scrollen und den Dashboard-Aufruf über das Kopfzeilenlogo. Die Anwendung prüft Signatur und Integrität vor einer Aktualisierung. Updatepakete sind keine ausführbaren Installer.
+0.9.112 ergänzt den sparsamen zentralen Abgleich von Unternehmensname und Logo, Inhaberrechte für Shopinformationen, langsameres Benachrichtigungs-/Verlaufs-Scrollen und einen Zähler für ungelesene E-Mails. Außerdem enthalten: kompakte Preis- und Verkaufskanalansicht sowie Abmelden unter Konto mit Rückkehr zur Launcher-Anmeldung. Die Anwendung prüft Signatur und Integrität vor einer Aktualisierung. Updatepakete sind keine ausführbaren Installer.
 
-Ab 0.9.108 wird ein kontofähiger Launcher ab 0.9.108 benötigt. Die Anmeldung mit einem Beydosh-Konto synchronisiert keine lokalen Geschäftsdaten. Die veröffentlichten Versionen sind Beta-Vorversionen; Hinweise und Testgrenzen stehen bei der jeweiligen Version.
+Ab 0.9.108 wird ein kontofähiger Launcher ab 0.9.108 benötigt. Die Anmeldung mit einem Beydosh-Konto synchronisiert keine lokalen Produkte, Preise, Bestände oder Mail-Zugangsdaten. Unternehmensname und Logo können nach bewusster Unternehmenszuordnung zentral geteilt werden; die Shopwährung bleibt lokal. eBay-Live-Verkauf erfordert eine gesondert eingerichtete und freigegebene Production-Verbindung. Die veröffentlichten Versionen sind Beta-Vorversionen; Hinweise und Testgrenzen stehen bei der jeweiligen Version.
 
 ## Setup
 
