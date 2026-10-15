@@ -1,23 +1,32 @@
 # Beydosh Releases
 
-Öffentliche signierte Updatepakete und Versionshinweise für Beydosh PIM.
+Öffentliche signierte Updates für Beydosh PIM, Windows x64.
 
 ## Beta-Updates
 
-Aktueller Stand: **0.9.113** für Windows x64.
+Aktueller Stand: **0.9.114**.
 
-- [Aktuelle Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.113)
-- [Updatekanal und Voraussetzungen](beta/updates/stable/)
-- [Alle veröffentlichten Versionen](https://github.com/Beydosh/releases/releases)
+- [Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.114)
+- [Updatekanal](beta/updates/stable/)
+- [Alle Versionen](https://github.com/Beydosh/releases/releases)
 
-0.9.113 stellt die vertraute Unternehmensprofil-Ansicht wieder her und korrigiert das Pixel-Scrollen im nach Tagen gruppierten Benachrichtigungsverlauf. Vorhandene lokale Namen und Logos bleiben erhalten; der beidseitige Unternehmensabgleich mit der Website und die Inhaberrechte bleiben bestehen. Die Unternehmensverbindung ist unter Konto erreichbar. Enthält außerdem die Mail-Zähler-, Konto-, Preis- und Launcher-Änderungen aus 0.9.112. Die Anwendung prüft Signatur und Integrität vor einer Aktualisierung. Updatepakete sind keine ausführbaren Installer.
+0.9.114 integriert die direkte Anmeldung mit einem echten eBay-Verkäuferkonto.
+In PIM gibt es keine Sandbox-Auswahl und keine Eingabe eigener Entwicklerdaten.
+Produkte werden nach dem Verbinden in PIM für die Veröffentlichung ausgewählt;
+die Anmeldung allein veröffentlicht nichts. Kontoeinstellungen und Richtlinien
+werden direkt bei eBay gepflegt. Hinweise und Testgrenzen stehen beim Release.
 
-Ab 0.9.108 wird ein kontofähiger Launcher ab 0.9.108 benötigt. Die Anmeldung mit einem Beydosh-Konto synchronisiert keine lokalen Produkte, Preise, Bestände oder Mail-Zugangsdaten. Unternehmensname und Logo können nach bewusster Unternehmenszuordnung zentral geteilt werden; die Shopwährung bleibt lokal. eBay-Live-Verkauf erfordert eine gesondert eingerichtete und freigegebene Production-Verbindung. Die veröffentlichten Versionen sind Beta-Vorversionen; Hinweise und Testgrenzen stehen bei der jeweiligen Version.
+Ein kontofähiger Launcher ab 0.9.108 ist erforderlich. Ein Beydosh-Konto
+synchronisiert keine lokalen Produkte, Preise, Bestände oder Mail-Zugangsdaten.
+Unternehmensname und Logo können nach bewusster Unternehmenszuordnung mit der
+Website abgeglichen werden; die Shopwährung bleibt lokal.
 
 ## Setup
 
-[Setup-Informationen](Setup/). Neue Setup-Pakete werden derzeit nur lokal geprüft und nicht veröffentlicht.
+[Setup-Informationen](Setup/). Neue Setup-Pakete bleiben vorerst lokal und werden
+nicht veröffentlicht. Die Updatepakete sind keine ausführbaren Installer.
 
-Historische signierte Pakete werden nicht umgeschrieben. Private Anwendungssourcen, Signierschlüssel und Zugangsdaten gehören nicht in dieses Repository. Veröffentlichungen erfolgen über den Beydosh-Veröffentlichungsaccount.
+Historische signierte Pakete werden nicht überschrieben. Anwendungssourcen,
+Signierschlüssel und Zugangsdaten gehören nicht in dieses öffentliche Repository.
 
-[Website](https://beydosh.com/) · [Dokumentation](https://github.com/Beydosh/docs) · [Ressourcen](https://github.com/Beydosh/resources)
+[Website](https://beydosh.com/) · [Dokumentation](https://github.com/Beydosh/docs)
