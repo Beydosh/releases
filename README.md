@@ -4,13 +4,24 @@
 
 ## Beta-Updates
 
-Aktueller Stand: **0.9.115**.
+Aktueller Stand: **0.9.116**.
 
-- [Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.115)
+- [Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.116)
 - [Updatekanal](beta/updates/stable/)
 - [Alle Versionen](https://github.com/Beydosh/releases/releases)
 
-0.9.115 korrigiert die Zuordnung und Bearbeitung des eigenen Unternehmensprofils.
+0.9.116 vereinfacht die eBay-Einrichtung mit Marktsuche, Speichern/Abbrechen und
+Export bearbeiten. Veröffentlichungsstatus und bestätigter eBay-Link werden am
+Produkt angezeigt; Ausschalten beendet nach Bestätigung das Angebot, nicht das
+PIM-Produkt. Änderungen an Preis und Bestand aktivierter Produkte werden bei
+laufendem PIM und Internet automatisch geprüft und übertragen. Bestehende
+Verkaufsfreigaben und Schutz vor doppelten oder unklaren Übertragungen bleiben
+erhalten. Notwendige Exportangaben sind getrennt erreichbar; eBay-Kategoriepflichten
+bleiben maßgeblich, es gibt keine pauschale EAN-Pflicht. Die Höchstgeschwindigkeit
+beim Scrollen steigt auf 2400 DIP/s (2,5-fach). Konto bleibt ohne vorgezogene
+Unternehmens-/Gruppenauswahl. Enthält alle bisherigen Änderungen.
+
+Enthält die Zuordnung und Bearbeitung des eigenen Unternehmensprofils aus 0.9.115.
 Name und Logo werden mit dem Website-Konto abgeglichen; eingeladene Mitarbeiter
 können fremde Unternehmensprofile nicht bearbeiten. Vorhandene lokale Originale
 bleiben erhalten. Die Shopwährung bleibt lokal.
