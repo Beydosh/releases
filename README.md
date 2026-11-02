@@ -4,22 +4,39 @@
 
 ## Beta-Updates
 
-Aktueller Stand: **0.9.116**.
+Aktueller Stand: **0.9.121** (Beta).
 
-- [Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.116)
+- [Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.121)
 - [Updatekanal](beta/updates/stable/)
 - [Alle Versionen](https://github.com/Beydosh/releases/releases)
 
-0.9.116 vereinfacht die eBay-Einrichtung mit Marktsuche, Speichern/Abbrechen und
-Export bearbeiten. Veröffentlichungsstatus und bestätigter eBay-Link werden am
-Produkt angezeigt; Ausschalten beendet nach Bestätigung das Angebot, nicht das
-PIM-Produkt. Änderungen an Preis und Bestand aktivierter Produkte werden bei
-laufendem PIM und Internet automatisch geprüft und übertragen. Bestehende
-Verkaufsfreigaben und Schutz vor doppelten oder unklaren Übertragungen bleiben
-erhalten. Notwendige Exportangaben sind getrennt erreichbar; eBay-Kategoriepflichten
-bleiben maßgeblich, es gibt keine pauschale EAN-Pflicht. Die Höchstgeschwindigkeit
-beim Scrollen steigt auf 2400 DIP/s (2,5-fach). Konto bleibt ohne vorgezogene
-Unternehmens-/Gruppenauswahl. Enthält alle bisherigen Änderungen.
+0.9.121 gleicht den Standard-Versandstandort unter Einstellungen / Shopinformationen
+mit dem Unternehmensprofil auf der Website ab. Nur der bestätigte Unternehmensinhaber
+kann die gemeinsame Adresse ändern. Mitglieder können sie sehen. Ein bisher lokaler
+Standort wird erst nach ausdrücklicher Übernahme und Speicherung zentral geteilt.
+Ungespeicherte Eingaben bleiben bei Hintergrundaktualisierungen erhalten;
+gleichzeitige Änderungen werden erkannt und nicht automatisch überschrieben.
+Verbindungsspezifische Adressen bleiben lokal. Der Abgleich ändert keine bestehenden
+eBay-Standorte oder Angebote.
+
+Die aktuelle Version enthält auch die bisherigen Verbesserungen:
+
+- 0.9.120: Standard-Versandstandort und optionale Adressausnahmen je Verbindung;
+  ausdrücklich bestätigtes Anlegen eines neuen eBay-Standorts.
+- 0.9.119: Absturzkorrektur beim Entfernen einer Verbindung mit fehlendem oder
+  beschädigtem gespeichertem Zugang.
+- 0.9.118: getrennte Skalierung für Oberfläche, Texte und Bedienelemente,
+  chronologische Benachrichtigungen ohne Suche und Verbesserungen beim E-Mail-Lesen.
+- 0.9.117: überarbeitete Fensterlayouts, einheitliche Reiter der KI-Assistenten
+  und Prüfung der zentralen PIM-Kontofreischaltung.
+- 0.9.116: einfachere eBay-Einrichtung mit Marktsuche und getrennten Exportangaben.
+
+Für eBay werden das eigene Verkäuferkonto, ein aktiver Versandstandort, passende
+Rahmenbedingungen und vollständige Export-Pflichtangaben benötigt. Die Anmeldung
+allein veröffentlicht nichts. Verkauf und automatische Preis-/Bestandsübertragung
+setzen die ausdrückliche Freigabe der Verbindung und der ausgewählten Produkte voraus.
+Rahmenbedingungen werden derzeit direkt bei eBay angelegt. Eine vollständige
+Live-Verkaufsabnahme wird durch diese Versionsübersicht nicht behauptet.
 
 Enthält die Zuordnung und Bearbeitung des eigenen Unternehmensprofils aus 0.9.115.
 Name und Logo werden mit dem Website-Konto abgeglichen; eingeladene Mitarbeiter
