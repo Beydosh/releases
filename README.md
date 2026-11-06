@@ -4,13 +4,24 @@
 
 ## Beta-Updates
 
-Aktueller Stand: **0.9.121** (Beta).
+Aktueller Stand: **0.9.127** (Beta).
 
-- [Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.121)
+- [Version und Änderungen](https://github.com/Beydosh/releases/releases/tag/v0.9.127)
 - [Updatekanal](beta/updates/stable/)
 - [Alle Versionen](https://github.com/Beydosh/releases/releases)
 
-0.9.121 gleicht den Standard-Versandstandort unter Einstellungen / Shopinformationen
+0.9.127 korrigiert die zentrale eBay-Verkaufsfreigabe und ergänzt Aktiv, Pausiert und
+Deaktiviert für Schnittstelle, Markt und Produkt. Die erste native Codex-Anbindung
+für Produktpflege ist unter Einstellungen / Konto standardmäßig ausgeschaltet.
+Das gemeinsame sanfte Scrollen, die Benachrichtigungs-Kopfzeile, Kontonamen bei
+Export-Verbindungen und das Laden von E-Mails wurden überarbeitet. Der passende
+Launcher ist im normalen Update enthalten.
+
+149 Desktop-Selbsttests sowie die isolierte Prüfung von Signatur, Manipulationsabwehr,
+Aktivierung und Rücknahme sind bestanden. Eine tatsächliche Installation oder ein
+erfolgreicher eBay-Angebotstest wird damit noch nicht behauptet. Details stehen beim Release.
+
+Seit 0.9.121 gleicht PIM den Standard-Versandstandort unter Einstellungen / Shopinformationen
 mit dem Unternehmensprofil auf der Website ab. Nur der bestätigte Unternehmensinhaber
 kann die gemeinsame Adresse ändern. Mitglieder können sie sehen. Ein bisher lokaler
 Standort wird erst nach ausdrücklicher Übernahme und Speicherung zentral geteilt.
@@ -35,7 +46,7 @@ Für eBay werden das eigene Verkäuferkonto, ein aktiver Versandstandort, passen
 Rahmenbedingungen und vollständige Export-Pflichtangaben benötigt. Die Anmeldung
 allein veröffentlicht nichts. Verkauf und automatische Preis-/Bestandsübertragung
 setzen die ausdrückliche Freigabe der Verbindung und der ausgewählten Produkte voraus.
-Rahmenbedingungen werden derzeit direkt bei eBay angelegt. Eine vollständige
+Rahmenbedingungen können im PIM angelegt und zugeordnet werden. Eine vollständige
 Live-Verkaufsabnahme wird durch diese Versionsübersicht nicht behauptet.
 
 Enthält die Zuordnung und Bearbeitung des eigenen Unternehmensprofils aus 0.9.115.
@@ -50,7 +61,7 @@ PIM-Update mitgeliefert und übernommen; ein separates Launcher-Update entfällt
 
 Enthält die direkte eBay-Echtkonto-Anmeldung aus 0.9.114. Produkte werden nach dem
 Verbinden in PIM ausgewählt; die Anmeldung allein veröffentlicht nichts.
-Kontoeinstellungen und Richtlinien werden direkt bei eBay gepflegt.
+Kontoeinstellungen bleiben bei eBay; Verkaufsrichtlinien können im PIM gepflegt werden.
 Hinweise und Testgrenzen stehen beim Release.
 
 Ein kontofähiger Launcher ab 0.9.108 ist erforderlich. Eine Kontoanmeldung
